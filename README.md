@@ -27,13 +27,13 @@ npm install mark-web-converter
 
 ```bash
 # 使用默认设置（输入: ./docs, 输出: ./dist）
-mark-web
+mark-web-converter
 
 # 指定输入输出目录
-mark-web -i ./markdown -o ./html
+mark-web-converter -i ./markdown -o ./html
 
 # 显示帮助
-mark-web --help
+mark-web-converter --help
 ```
 
 ### API 使用（在其他项目中）

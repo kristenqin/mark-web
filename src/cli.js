@@ -43,10 +43,10 @@ function parseArgs() {
 
 function showHelp() {
   console.log(`
-mark-web - 简单的 Markdown 到 HTML 转换工具
+mark-web-converter - 简单的 Markdown 到 HTML 转换工具
 
 用法:
-  mark-web [选项]
+  mark-web-converter [选项]
 
 选项:
   -i, --input <目录>   输入目录 (默认: ./docs)
@@ -54,8 +54,8 @@ mark-web - 简单的 Markdown 到 HTML 转换工具
   -h, --help           显示帮助信息
 
 示例:
-  mark-web                              # 使用默认设置
-  mark-web -i ./markdown -o ./html      # 指定输入输出目录
+  mark-web-converter                              # 使用默认设置
+  mark-web-converter -i ./markdown -o ./html      # 指定输入输出目录
 `);
 }
 
@@ -63,7 +63,7 @@ mark-web - 简单的 Markdown 到 HTML 转换工具
 function main() {
   const options = parseArgs();
   
-  console.log('mark-web - Markdown 到 HTML 转换工具');
+  console.log('mark-web-converter - Markdown 到 HTML 转换工具');
   console.log('=====================================');
   
   const converter = new MarkdownConverter(options);

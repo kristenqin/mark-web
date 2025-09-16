@@ -1,46 +1,56 @@
-# mark-web
+# mark-web-converter
 
 简单的 Markdown 到 HTML 转换工具，支持文档间链接的自动转换。
 
 ## 功能特性
 
-- 将 Markdown 文件转换为 HTML
-- 自动处理文档间的相互引用链接（将 `.md` 链接转换为 `.html`）
-- 简洁的 GitHub 风格样式
-- 批量处理整个目录
+- 🚀 将 Markdown 文件转换为 HTML
+- 🔗 自动处理文档间的相互引用链接（将 `.md` 链接转换为 `.html`）
+- 🎨 简洁的 GitHub 风格样式
+- 📁 批量处理整个目录，保持目录结构
 
 ## 安装
 
 ```bash
-npm install
+# 全局安装
+npm install -g mark-web-converter
+
+# 或作为项目依赖
+npm install mark-web-converter
 ```
 
 ## 使用方法
 
 ### 命令行使用
 
+全局安装后可直接使用：
+
 ```bash
 # 使用默认设置（输入: ./docs, 输出: ./dist）
-node src/cli.js
+mark-web
 
 # 指定输入输出目录
-node src/cli.js -i ./markdown -o ./html
+mark-web -i ./markdown -o ./html
 
 # 显示帮助
-node src/cli.js --help
+mark-web --help
 ```
 
-### API 使用
+### API 使用（在其他项目中）
 
 ```javascript
-const MarkdownConverter = require('./src/index');
+const MarkdownConverter = require('mark-web-converter');
 
 const converter = new MarkdownConverter({
   input: './docs',
   output: './dist'
 });
 
+// 转换所有文件
 converter.convertAll();
+
+// 或转换单个文件
+converter.convertFile('input.md', 'output.html');
 ```
 
 ## 示例

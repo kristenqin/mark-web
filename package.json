@@ -1,19 +1,41 @@
 {
-  "name": "mark-web",
+  "name": "mark-web-converter",
   "version": "1.0.0",
   "description": "简单的 Markdown 到 HTML 转换工具",
   "main": "src/index.js",
   "bin": {
     "mark-web": "./src/cli.js"
   },
+  "files": [
+    "src/",
+    "README.md"
+  ],
   "scripts": {
     "test": "node test/test.js",
-    "build": "node src/cli.js"
+    "build": "node src/cli.js",
+    "prepublishOnly": "npm test"
   },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kristenqin/mark-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kristenqin/mark-web/issues"
+  },
+  "homepage": "https://github.com/kristenqin/mark-web#readme",
   "dependencies": {
     "marked": "^4.3.0"
   },
-  "keywords": ["markdown", "html", "converter"],
-  "author": "",
+  "keywords": [
+    "markdown",
+    "html",
+    "converter",
+    "static-site",
+    "documentation"
+  ],
+  "author": "kristenqin<yqin07184@gmail.com>",
   "license": "MIT"
 }

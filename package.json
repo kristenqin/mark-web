@@ -1,6 +1,6 @@
 {
   "name": "mark-web-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "简单的 Markdown 到 HTML 转换工具",
   "main": "src/index.js",
   "bin": {

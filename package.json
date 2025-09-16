@@ -1,0 +1,19 @@
+{
+  "name": "mark-web",
+  "version": "1.0.0",
+  "description": "简单的 Markdown 到 HTML 转换工具",
+  "main": "src/index.js",
+  "bin": {
+    "mark-web": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node test/test.js",
+    "build": "node src/cli.js"
+  },
+  "dependencies": {
+    "marked": "^4.3.0"
+  },
+  "keywords": ["markdown", "html", "converter"],
+  "author": "",
+  "license": "MIT"
+}
